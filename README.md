@@ -19,3 +19,5 @@ Put scripts in the folder. See [SampleScripts](https://github.com/coteditor/Samp
 [CotEditor GitHub](https://github.com/coteditor/CotEditor)
 
 [SampleScripts](https://github.com/coteditor/SampleScripts)
+
+[SampleScripts Wiki](https://github.com/coteditor/CotEditor/wiki/CotEditor-Scripts)
