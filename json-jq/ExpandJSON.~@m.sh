@@ -4,7 +4,12 @@
 # %%%{CotEditorXInput=AllText}%%%
 # %%%{CotEditorXOutput=ReplaceAllText}%%%
 
-/opt/homebrew/bin/jq .
+# locate jq (CotEditor launches scripts with a minimal PATH)
+for JQ in "$(command -v jq 2>/dev/null)" /opt/homebrew/bin/jq /usr/local/bin/jq /usr/bin/jq; do
+    [ -x "$JQ" ] && break
+done
+
+"$JQ" .
 
 # If you want a sorted output, use the following command:
-# /opt/homebrew/bin/jq . --sort-keys
+# "$JQ" . --sort-keys
